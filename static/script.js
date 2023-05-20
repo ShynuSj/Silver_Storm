@@ -38,11 +38,11 @@ let date = Number(dateS.getDate().toFixed(0, 2));
 let month = Number(dateS.getMonth().toFixed(0, 2));
 let year = dateS.getFullYear();
 let day = Number(dateS.getDay());
-let tomorrow = new Date(date / month +1 / year);
+let tomorrow = new Date(date +1 / month +1 / year);
 const toMweekday = tomorrow.toLocaleString("en-UK", options);
 const dayName = daysOfWeek[day];
 setDate.textContent = `${date}/${month +1}/${year}  ${weekday}`;
-setdateTo.textContent = `${date }/${month +1}/${year}  ${toMweekday}`;
+setdateTo.textContent = `${date +1}/${month +1}/${year}  ${toMweekday}`;
 
 function checkScreenWidth() {
   let screenWidth = window.innerWidth;
