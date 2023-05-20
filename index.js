@@ -10,6 +10,6 @@ app.get("/", (req, res) => {
   res.sendFile("index.html");
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Silverstorm started on port ${process.env.PORT}`);
 });
