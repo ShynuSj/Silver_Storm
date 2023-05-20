@@ -35,7 +35,7 @@ const options = { weekday: "long" };
 const weekday = dateS.toLocaleString("en-UK", options);
 
 let date = Number(dateS.getDate().toFixed(0, 2));
-let month = dateS.getMonth().toFixed(0, 2);
+let month = Number(dateS.getMonth().toFixed(0, 2));
 let year = dateS.getFullYear();
 let day = Number(dateS.getDay());
 let tomorrow = new Date(date / month +1 / year);
